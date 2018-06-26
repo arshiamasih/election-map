@@ -39,10 +39,10 @@ arshia.results[43] = 27;
 
 var setStateResults = function(state) {
 theStates[state].winner = null;
-  if (arshia.results[state] > saundra.results[state]) {
+  if (arshia.results[state] < saundra.results[state]) {
     theStates[state].winner = arshia;
     }
-  else if (arshia.results[state] < saundra.results[state]) {
+  else if (arshia.results[state] > saundra.results[state]) {
     theStates[state].winner = saundra;
     }
 
