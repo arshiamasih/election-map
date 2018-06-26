@@ -76,7 +76,14 @@ candidate1Name.innerText = candyse.name;
 candidate1Results.innerText = arshia.results[state];
 candidate2Name.innerText = arshia.name;
 candidate2Results.innerText = candyse.results[state];
+
+
+if (stateWinner === null) {
+  winnerName.innerText = "DRAW";
+} else {
 winnerName.innerText = theStates[state].winner.name;
+}  
+
 };
 
 
